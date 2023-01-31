@@ -2,33 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
-}
-
-*/
-
 @layer base {
   h1 {
     @apply text-4xl;
     @apply font-bold;
+    color: #282A36;
   }
 
   h2 {
     @apply text-3xl;
     @apply font-bold;
+    color: #282A36;
   }
 
   h3 {
     @apply text-2xl;
     @apply font-bold;
+    color: #282A36;
   }
 
   p {
     @apply text-lg;
+    color: #282A36;
+  }
+
+  .CodeRay {
+    @apply bg-gray-100;
+    @apply p-2;
+    @apply my-4;
+    @apply rounded-md;
   }
 }
