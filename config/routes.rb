@@ -2,8 +2,9 @@
 
 Rails.application.routes.draw do
   resource :about, only: :show
+  resource :home, only: :show
 
-  root "abouts#show"
+  root "homes#show"
 
   namespace :admin do
     resources :posts
