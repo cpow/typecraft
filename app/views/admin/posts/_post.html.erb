@@ -4,8 +4,12 @@
   </h1>
 
   <body>
-    <%= markdown(post.body) %>
+    <%= post.blurb %>
   </body>
+
+  <% if action_name == 'show' %>
+    <%= markdown(post.body) %>
+  <% end %>
 
   <% if action_name != "show" %>
     <%= link_to "Show this post", admin_post_path(post), class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>

@@ -11,15 +11,26 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <nav class="bg-gray-800">
+  <nav class="border-b border-b-slate-300">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
+        <div class="flex items-center w-40">
+          <%= image_tag "keyboard", size: "100x100" %>
+          <div class="dark-cool font-bold pl-2 self-end">
+            craft
+          </div>
+        </div>
+
+        <div class="flex w-72 justify-end">
+          <%= link_to 'Blog', admin_posts_path, class: "ml-2 py-3 px-5 inline-block slate font-medium hover:underline" %>
+          <%= link_to 'About', admin_posts_path, class: "ml-2 py-3 px-5 inline-block slate font-medium hover:underline" %>
+        </div>
       </div>
     </div>
   </nav>
 
   <body>
-    <main class="w-full lg:w-5/6 xl:w-4/5 2xl:w-3/4 mx-auto mt-28 px-5 flex">
+    <main class="w-full mx-auto max-w-7xl sm:px-6 lg:px-8 mt-28 px-5 flex">
       <%= yield %>
     </main>
   </body>

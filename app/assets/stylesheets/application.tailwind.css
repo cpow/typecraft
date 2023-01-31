@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  .dark-cool {
+    color: #282A36;
+  }
+
   h1 {
     @apply text-4xl;
     @apply font-bold;

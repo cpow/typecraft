@@ -21,6 +21,13 @@
 
     <div class="my-10">
       <div class="font-bold">
+        <%= form.label :blurb %>
+      </div>
+      <%= form.text_area :blurb, cols: 100, rows: 10, class: "shadow appearance-none border rounded w-full" %>
+    </div>
+
+    <div class="my-10">
+      <div class="font-bold">
         <%= form.label :body %>
       </div>
       <%= form.text_area :body, cols: 100, rows: 20, class: "shadow appearance-none border rounded w-full" %>
