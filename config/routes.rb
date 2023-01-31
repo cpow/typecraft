@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :posts
+  resource :about, only: :show
+
+  root "abouts#show"
 
   namespace :admin do
     resources :posts
