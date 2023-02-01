@@ -7,16 +7,22 @@
     color: #282A36;
   }
 
+  .title {
+    @apply text-5xl;
+    @apply font-bold;
+    @apply my-8;
+  }
+
   h1 {
     @apply text-4xl;
     @apply font-bold;
-    color: #282A36;
+    @apply my-4;
   }
 
   h2 {
     @apply text-3xl;
     @apply font-bold;
-    color: #282A36;
+    @apply my-2;
   }
 
   h3 {
@@ -27,11 +33,10 @@
 
   p {
     @apply text-lg;
-    color: #282A36;
   }
 
   .CodeRay {
-    @apply bg-gray-100;
+    @apply bg-slate-100;
     @apply p-2;
     @apply my-4;
     @apply rounded-md;
