@@ -17,6 +17,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_31_160905) do
     t.string "title"
     t.text "body"
     t.text "blurb"
+    t.text "iframe"
+    t.string "technology"
   end
 
 end

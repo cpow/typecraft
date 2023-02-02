@@ -49,6 +49,8 @@ gem "bootsnap", require: false
 
 gem "coderay"
 
+gem "coderay_bash"
+
 gem "redcarpet"
 
 # Use Sass to process CSS

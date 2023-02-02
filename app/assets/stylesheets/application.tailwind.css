@@ -10,29 +10,38 @@
   .title {
     @apply text-5xl;
     @apply font-bold;
+    @apply text-slate-700;
+    @apply font-serif;
     @apply my-8;
   }
 
   h1 {
     @apply text-4xl;
     @apply font-bold;
+    @apply text-slate-700;
+    @apply font-serif;
     @apply my-4;
   }
 
   h2 {
     @apply text-3xl;
     @apply font-bold;
+    @apply text-slate-700;
+    @apply font-serif;
     @apply my-2;
   }
 
   h3 {
     @apply text-2xl;
+    @apply font-serif;
+    @apply text-slate-700;
     @apply font-bold;
     color: #282A36;
   }
 
   p {
     @apply text-lg;
+    @apply my-6;
   }
 
   .CodeRay {
