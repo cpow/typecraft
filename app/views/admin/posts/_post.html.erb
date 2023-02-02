@@ -3,6 +3,10 @@
     <%= post.title %>
   </div>
 
+  <% if post.thumbnail.present? %>
+    <%= image_tag post.thumbnail, class: "sm:w-1/3 w-full" %>
+  <% end %>
+
   <body>
     <%= post.blurb %>
   </body>

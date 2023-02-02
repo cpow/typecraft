@@ -21,6 +21,18 @@
 
     <div class="my-10">
       <div class="font-bold">
+        <%= form.label :thumbnail %>
+      </div>
+      <%= form.file_field :thumbnail, class: "shadow appearance-none border rounded w-full" %>
+    </div>
+
+    <% if post.thumbnail.present? %>
+      <h2>Current Thumbnail</h2>
+      <%= image_tag post.thumbnail, class: "sm:w-1/3 w-full" %>
+    <% end %>
+
+    <div class="my-10">
+      <div class="font-bold">
         <%= form.label :iframe %>
       </div>
       <%= form.text_area :iframe, class: "shadow appearance-none border rounded w-full" %>

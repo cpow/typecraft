@@ -14,6 +14,8 @@
 #  technology :string
 #
 class Post < ApplicationRecord
+  has_one_attached :thumbnail
+
   enum technology: {
     ruby: "ruby",
     rails: "rails",
