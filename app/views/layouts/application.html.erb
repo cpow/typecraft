@@ -17,7 +17,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <nav class="bg-slate-800 border-b border-b-slate-300">
+  <nav class="bg-darker-900">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <%= link_to home_path do %>
@@ -27,15 +27,15 @@
         <% end %>
 
         <div class="flex w-72 justify-end">
-          <%= link_to 'Blog', admin_posts_path, class: "ml-2 py-3 px-5 inline-block text-slate-50 font-medium text-lg hover:underline" %>
-          <%= link_to 'About', about_path, class: "ml-2 py-3 px-5 inline-block text-slate-50 font-medium text-lg hover:underline" %>
+          <%= link_to 'Blog', admin_posts_path, class: "ml-2 py-3 px-5 inline-block text-purple-50 font-medium text-lg hover:underline" %>
+          <%= link_to 'About', about_path, class: "ml-2 py-3 px-5 inline-block text-purple-50 font-medium text-lg hover:underline" %>
         </div>
       </div>
     </div>
   </nav>
 
-  <body class="">
-    <main class="w-full mx-auto mb-20">
+  <body>
+    <main class="w-full mx-auto">
       <%= yield %>
     </main>
   </body>
