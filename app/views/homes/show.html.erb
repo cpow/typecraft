@@ -1,4 +1,4 @@
-<div class="w-full py-32 sm:py-96 sm:px-10 px-4">
+<div class="w-full sm:py-48 py-24 sm:px-10 px-4">
   <div class="max-w-6xl flex lg:flex-row flex-col m-auto">
     <div class="flex flex-col lg:mb-0 mr-10">
       <div class="font-black mr-20 font-serif sm:text-7xl text-4xl text-slate-700 sm:my-10 my-4">
@@ -17,7 +17,7 @@
 
 <div class="mt-5 m-auto flex flex-col w-full py-32 bg-slate-200 sm:px-10 px-4">
   <div class="max-w-6xl m-auto">
-    <div class="sm:text-6xl text-4xl font-serif font-black text-slate-700">Latest Lessons</div>
+    <div class="sm:text-6xl text-4xl font-serif font-black text-slate-700">Hot off the press</div>
     <div class="sm:text-2xl text-lg w-full mt-4 font-light">
       The latest from typecraft. This community is all about learning, together. All of these posts accompany a video lesson, so you can learn by watching, and then practice by typing.
     </div>
@@ -26,7 +26,7 @@
       <% @posts.each do |post| %>
         <%= link_to post do %>
           <div class="max-w-sm bg-white hover:shadow-slate-500 rounded overflow-hidden shadow-lg">
-            <%= image_tag "keyboard", class: "w-full" %>
+            <%= image_tag "video_thumbnail", class: "w-full" %>
             <div class="px-6 py-4">
               <div class="font-serif font-bold text-xl mb-2">
                 <%= post.title %>
