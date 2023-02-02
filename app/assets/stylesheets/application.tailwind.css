@@ -37,8 +37,9 @@
 
   p {
     @apply text-lg;
-    @apply text-cyan-50;
-    @apply py-6;
+    @apply text-dark-50;
+    @apply font-light;
+    @apply py-4;
   }
 
   .CodeRay {
