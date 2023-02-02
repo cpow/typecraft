@@ -1,0 +1,16 @@
+<div class="font-serif font-black text-slate-700 text-5xl sm:text-7xl my-10 w-full">
+  <%= post.title.upcase %>
+</div>
+
+<p class="italic sm:text-2xl text-lg flex">
+  <%= post.blurb %>
+</p>
+
+
+<% if post.iframe %>
+  <div class="my-10 w-full flex justify-center flex-col border-slate-500 m-auto">
+    <%= post.iframe&.html_safe %>
+  </div>
+<% end %>
+
+<%= markdown(post.body) %>
