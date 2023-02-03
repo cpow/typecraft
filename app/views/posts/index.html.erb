@@ -1,0 +1,17 @@
+<div class="h-full min-h-screen w-full pt-10 bg-darker-700 sm:px-10 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="">
+      <div class="text-purple-300 font-black mr-20 font-serif sm:text-7xl text-4xl sm:my-10 my-4">
+        Our Best Stuff
+      </div>
+      <div class="text-lg sm:text-2xl text-lincoln-50 font-light">
+        These are the latest posts and videos out of typecraft. Most posts come with a video, so be sure to check them out! We are updating things daily. so come back often! Thanks nerds!
+      </div>
+      <div class="flex md:flex-row flex-wrap flex-col gap-6 justify-start mt-10">
+        <% @posts.each do |post| %>
+          <%= render partial: "components/post", locals: { post: } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

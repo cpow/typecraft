@@ -1,0 +1,22 @@
+<%= link_to post do %>
+  <div class="max-w-sm min-w-sm bg-darker-800 hover:shadow-darker-300 rounded-xl overflow-hidden shadow-xl">
+    <% if post.thumbnail.present? %>
+      <%= image_tag post.thumbnail, class: "w-full" %>
+    <% end %>
+    <div class="px-6 py-4">
+      <div class="flex flex-row mb-4">
+        <div class="bg-darker-50 px-2 py-1 mr-auto max-w-1/3 rounded-md">
+          <div class="font-light italic text-darker-800">
+            <%= "# #{post.technology}" %>
+          </div>
+        </div>
+      </div>
+      <div class="font-serif font-bold text-cyan-400 text-xl">
+        <%= post.title %>
+      </div>
+      <p class="text-dark-100 text-base">
+      <%= post.blurb %>
+      </p>
+    </div>
+  </div>
+<% end %>

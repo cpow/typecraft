@@ -2,6 +2,14 @@
   <%= post.title.upcase %>
 </div>
 
+<div class="flex flex-row mt-6 mb-2">
+  <div class="bg-darker-50 px-2 py-1 mr-auto max-w-1/3 rounded-md">
+    <div class="font-light italic text-darker-800">
+      <%= "# #{post.technology}" %>
+    </div>
+  </div>
+</div>
+
 <p class="italic sm:text-2xl text-lg flex">
   <%= post.blurb %>
 </p>

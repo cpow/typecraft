@@ -1,8 +1,8 @@
 <div class="bg-darker-700 w-full sm:py-48 py-24 sm:px-10 px-4">
-  <div class="max-w-6xl flex lg:flex-row flex-col m-auto">
+  <div class="max-w-7xl flex lg:flex-row flex-col m-auto">
     <div class="flex flex-col lg:mb-0 mr-10">
       <div class="text-purple-300 font-black mr-20 font-serif sm:text-7xl text-4xl sm:my-10 my-4">
-        Learning, <em>the easy way</em>
+        Learning, <em>the fun way</em>
       </div>
       <div class="text-lg sm:text-2xl text-lincoln-50 font-light">
         typecraft is a place where we can all learn together, and have fun doing it.
@@ -16,29 +16,18 @@
 </div>
 
 <div class="m-auto flex flex-col w-full py-32 bg-darker-900 sm:px-10 px-4">
-  <div class="max-w-6xl m-auto">
+  <div class="max-w-7xl m-auto">
     <div class="sm:text-6xl text-4xl font-serif font-black text-cyan-700">Hot off the press</div>
     <div class="sm:text-2xl font-light text-lg w-full mt-4 text-lincoln-50">
       The latest from typecraft. This community is all about learning, together. All of these posts accompany a video lesson, so you can learn by watching, and then practice by typing.
     </div>
+    <div class="sm:text-2xl font-light text-lg w-full mt-4 text-lincoln-50">
+ Or, you don't have to. Whatever, its a free country
+    </div>
 
-    <div class="flex flex-row justify-evenly mt-20">
+    <div class="flex md:flex-row flex-col flex-wrap justify-start gap-6 mt-20">
       <% @posts.each do |post| %>
-        <%= link_to post do %>
-          <div class="max-w-sm bg-darker-800 hover:shadow-darker-600 rounded-xl overflow-hidden shadow-xl">
-            <% if post.thumbnail.present? %>
-              <%= image_tag post.thumbnail, class: "w-full" %>
-            <% end %>
-            <div class="px-6 py-4">
-              <div class="font-serif font-bold text-cyan-400 text-xl mb-2">
-                <%= post.title %>
-              </div>
-              <p class="text-dark-100 text-base">
-              <%= post.blurb %>
-              </p>
-            </div>
-          </div>
-        <% end %>
+        <%= render partial: "components/post", locals: { post: } %>
       <% end %>
     </div>
   </div>

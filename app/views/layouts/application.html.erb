@@ -27,7 +27,7 @@
         <% end %>
 
         <div class="flex w-72 justify-end">
-          <%= link_to 'Blog', admin_posts_path, class: "ml-2 py-3 px-5 inline-block text-purple-50 font-medium text-lg hover:underline" %>
+          <%= link_to 'Blog', posts_path, class: "ml-2 py-3 px-5 inline-block text-purple-50 font-medium text-lg hover:underline" %>
           <%= link_to 'About', about_path, class: "ml-2 py-3 px-5 inline-block text-purple-50 font-medium text-lg hover:underline" %>
         </div>
       </div>
@@ -35,7 +35,7 @@
   </nav>
 
   <body>
-    <main class="w-full mx-auto">
+    <main class="w-full min-h-screen mx-auto">
       <%= yield %>
     </main>
   </body>
