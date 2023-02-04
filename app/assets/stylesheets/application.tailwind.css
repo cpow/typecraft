@@ -27,6 +27,10 @@
     @apply my-2;
   }
 
+  li {
+    @apply list-decimal;
+  }
+
   h3 {
     @apply text-2xl;
     @apply font-serif;
