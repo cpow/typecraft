@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}

@@ -16,9 +16,7 @@
 
 
 <% if post.iframe %>
-  <div class="my-10 w-full flex justify-center flex-col border-slate-500 m-auto">
-    <%= post.iframe&.html_safe %>
-  </div>
+  <%= post.iframe&.html_safe %>
 <% end %>
 
 <%= markdown(post.body) %>
