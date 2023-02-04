@@ -27,6 +27,9 @@ class Post < ApplicationRecord
   enum technology: {
     ruby: "ruby",
     rails: "rails",
+    zsh: "zsh",
+    shell: "shell",
+    react: "react",
     javascript: "javascript"
   }
 end
