@@ -28,6 +28,7 @@
   }
 
   li {
+    @apply list-decimal;
   }
 
   li:marker {
