@@ -28,7 +28,11 @@
   }
 
   li {
-    @apply list-decimal;
+  }
+
+  li:marker {
+    @apply text-dark-50;
+    @apply text-lg;
   }
 
   h3 {
@@ -36,7 +40,13 @@
     @apply font-serif;
     @apply text-cyan-200;
     @apply font-bold;
-    color: #282A36;
+  }
+
+  h4 {
+    @apply text-xl;
+    @apply font-serif;
+    @apply text-cyan-200;
+    @apply font-bold;
   }
 
   p {
